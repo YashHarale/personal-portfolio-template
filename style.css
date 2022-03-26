@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Dancing+Script&family=Fira+Sans&family=Montserrat:ital,wght@0,100;1,100&family=Nunito:wght@200&family=Ubuntu&family=Varela+Round&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Dancing+Script&family=Fira+Sans&family=Montserrat:ital,wght@0,100;1,100&family=Nunito:wght@200&family=Source+Code+Pro:wght@300&family=Ubuntu&family=Varela+Round&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar {
+  position: absolute;
+  background-color: rgb(224, 219, 219);
+  /* width: 264px; */
+  height: 110vh;
+  font-family: "Fira Sans", sans-serif;
+  transition: transform 0.34s ease-in;
+}
+
+.sidebar nav {
+  padding: 20px;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.sidebar nav li {
+  list-style: none;
+  font-size: 20px;
+  padding: 25px 0;
+}
+
+.sidebar nav li a {
+  text-decoration: none;
+  color: black;
+}
+
+.main {
+  /* background-color: yellow; */
+  width: 90vw;
+  padding: 23px;
+}
+
+.container {
+  display: flex;
+}
+
+.infoContainer {
+  /* background-color: rgb(94, 218, 211); */
+  height: 65vh;
+  margin: 60px 60px;
+  width: 70vw;
+  display: flex;
+  justify-content: space-around;
+  /* flex-wrap: wrap; */
+}
+
+.devInfo {
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Source Code Pro", monospace;
+}
+
+.hello {
+  font-size: 3em;
+}
+
+.name {
+  font-size: 3em;
+  font-weight: bold;
+  font-family: "Fira Sans", sans-serif;
+}
+
+.about {
+  font-size: 2.5em;
+}
+
+.moreAbout {
+  margin-top: 23px;
+  font-size: 1.3em;
+  font-family: "Fira Sans", sans-serif;
+}
+
+.buttons {
+  margin-top: 2.2em;
+  font-size: 16px;
+}
+
+.btn {
+  padding: 9px 14px;
+  border-radius: 22px;
+  color: white;
+  background-color: dodgerblue;
+  font-weight: bold;
+  font-size: 1.4em;
+  margin: 3px 3px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: dodgerblue;
+  background-color: white;
+}
+
+.devPic img {
+  width: 230px;
+  height: 65vh;
+}
+
+/* Style for contact page */
+
+.contactform {
+  padding: 0 34px;
+  font-family: "Fira Sans", sans-serif;
+  padding-top: 84px;
+  margin-left: 250px;
+  margin-right: 250px;
+}
+
+.contactform h1 {
+  font-family: "Source Code Pro", monospace;
+  /* padding: 12px 0; */
+}
+
+.contactform form div {
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.contactform form div input {
+  /* width: 26vw; */
+  border-radius: 5px;
+  margin: 6px 0 0 0;
+  padding: 3px;
+}
+
+#emailHelp {
+  font-size: 8px;
+  color: midnightblue;
+  margin: 0 5px;
+  padding: 3px 0 0 0;
+}
+
+#form-check {
+  flex-direction: row;
+}
+
+#form-check input {
+  width: 24px;
+  margin: 3px 0;
+}
+
+.btn-sm {
+  font-size: 9px;
+  padding: 9px 10px;
+  margin-top: 6px;
+}
+
+/* style for blog.html */
+
+.blogContainer {
+  margin-left: 80px;
+}
+
+.blogItem {
+  margin: 20px;
+  font-family: "Fira Sans", sans-serif;
+}
+
+.blogContainer h1 {
+  font-family: "Fira Sans", sans-serif;
+  margin: 23px;
+}
+
+/* style for intro.html */
+
+.intro {
+  margin-left: 105px;
+}
+
+.intro h2 {
+  font-family: "Fira Sans", sans-serif;
+  margin: 22px 20px;
+}
+
+.intro p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: 19px 20px;
+}
+
+.skillContainer {
+  padding: 12px;
+}
+
+.skillItem {
+  display: flex;
+  align-items: center;
+  font-family: "Source Code Pro", monospace;
+  font-weight: 900;
+  margin: 10px 0;
+}
+
+.skill {
+  width: 264px;
+  height: 9px;
+  border: 2px solid black;
+}
+
+.hundred {
+  width: 264px;
+  background-color: blueviolet;
+}
+.fifty {
+  width: 132px;
+  background-color: aqua;
+}
+.twentyfive {
+  width: 66px;
+  background-color: yellow;
+}
+
+/* For making website responsive */
+
+.sidebarGo {
+  transform: translate(-443px, 0px);
+  position: absolute;
+}
+
+@media (max-width: 1000px) {
+  .buttons {
+    font-size: 10px;
+  }
+
+  .devPic {
+    display: none;
+  }
+
+  .devInfo {
+    font-size: 12px;
+    margin-right: 30px;
+  }
+
+  .intro,
+  .blogContainer,
+  .contactform {
+    margin: 50px 8px;
+  }
+}
+
+/* Css for hamburger icon */
+
+.hamburger {
+  position: absolute;
+  cursor: pointer;
+  left: 10px;
+}
+
+.ham {
+  margin-top: 4px;
+  margin-left: 12px;
+}
+
+.cross {
+  margin-left: 120px;
+  margin-top: 5px;
+}
